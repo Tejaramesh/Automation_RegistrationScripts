@@ -1,0 +1,65 @@
+Request method:	POST
+Request URI:	https://hubdriveonlinetest.eoxvantage.com:9080/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "commands": [
+        "store_cache_data",
+        "sign_in"
+    ],
+    "generatelink": "true",
+    "user_management_commands": [
+        "CreateUserFromLink"
+    ],
+    "type": "BUSINESS",
+    "formId": "dd20f8b2-1aac-11ed-861d-0242ac120002dd20f8b2-1aac-11ed-861d-0242ac120002",
+    "accountName": "e91c22e9-c506-4442-9bda-268ab2d786eb",
+    "isUserAnApplicant": "{\"isUserAnApplicant\":\"yes\"}",
+    "identifier_field": "email",
+    "country": "United States of America",
+    "entity_name": "USER",
+    "postLoginUrl": "pipeline",
+    "template": "NewAccount",
+    "extraAPPByForm": "{\"payment\":\"cec14502-3c24-4616-a0dd-5a6bf25fabf4\"}",
+    "firstname": "Ashish",
+    "lastname": "Krishnan",
+    "userType": "OfficeEmployee",
+    "phone": "(574) 374-3734",
+    "address1": "Test Address 12",
+    "stateObj": {
+        "name": "Colorado",
+        "abbreviation": "CO"
+    },
+    "state": "CO",
+    "city": "City",
+    "email": "test+698@email.com",
+    "submit": true,
+    "zip": "35004",
+    "appId": "a4b1f073-fc20-477f-a804-1aa206938c42",
+    "preferences": "{\"timezone\":\"Asia/Calcutta\"}"
+}
+HTTP/1.1 200 OK
+Date: Fri, 26 Apr 2024 16:21:13 GMT
+Server: Apache
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Length: 465
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json; charset=utf-8
+
+{
+    "status": "success",
+    "data": {
+        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQxNDg0NzQsImp0aSI6IkNqbmYwNXFsZ09BdldCckxhQ29hbFFHWXo3WmVpeWR3UzVJcHI1aXJJOGs9IiwibmJmIjoxNzE0MTQ4NDc0LCJleHAiOjE3MTQyMjA0NzQsImRhdGEiOnsidXNlcm5hbWUiOiJ0ZXN0KzY5OEBlbWFpbC5jb20iLCJhY2NvdW50SWQiOiIyMzA2In19.uEEXuu8Zh13qu7l5JfB6s4NkEScYSlqn2hEWeoLaGOk1Cz-tdZr0O_pUKPYS4EJyQ2TPhR2krvB3PtoYcrUj3Q",
+        "refresh_token": "732789357662bd47a30cac7.44236894",
+        "username": "test+698@email.com"
+    }
+}
