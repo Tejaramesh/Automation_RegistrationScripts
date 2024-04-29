@@ -20,6 +20,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import resources.APIresources;
 import resources.TestDataBuild;
 import resources.Utils;
 
@@ -31,19 +32,22 @@ public class StepDefination extends Utils {
 	RequestSpecification req;
 	Response res;
 	
-	@Given("Registration Details with {string} {string} {string}")
-	public void registration_details_with(String email, String firstname, String lastname) throws IOException {
+	@Given("Registration Details with {string} {string} {string} {string} {string}")
+	public void registration_details_with(String email, String firstname, String lastname, String formId, String userType) throws IOException {
 	    // Write code here that turns the phrase above into concrete actions
 		//Request spec for generic request
 		
        resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 		//connecting generic variable to request
-	 req = given().spec(requestSpecification()).body(data.registerPayload(email,firstname,lastname));
+	 req = given().spec(requestSpecification()).body(data.registerPayload(email,firstname,lastname,formId,userType));
 	}
 	@When("user calls {string} with {string} http request")
-	public void user_calls_with_http_request(String string, String string2) {
+	public void user_calls_with_http_request(String resource, String method) {
 	    // Write code here that turns the phrase above into concrete actions
-		 res = req.when().post("/register").then().spec(resspec).extract().response();
+		APIresources resourceAPI = APIresources.valueOf(resource);
+		System.out.println(resourceAPI.getResource());
+		
+		 res = req.when().post(resourceAPI.getResource()).then().spec(resspec).extract().response();
 	}
 	@Then("the api call got success with status code {int}")
 	public void the_api_call_got_success_with_status_code(Integer int1) {
@@ -57,9 +61,15 @@ public class StepDefination extends Utils {
 	    // Write code here that turns the phrase above into concrete actions
 	   String response = res.asString();
 	   JsonPath js=new JsonPath(response);
-	   assertEquals(js.get(keyvalue).toString(),Expectedvalue);
+	   assertEquals(getJsonPath(res,keyvalue),Expectedvalue);
 	}
-
+	
+	@Given("Atruck Registration Details with {string} {string} {string} {string} {string}")
+	public void atruck_registration_details_with(String email, String firstname, String lastname, String formId, String userType) throws IOException {
+		 resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+			//connecting generic variable to request
+		 req = given().spec(requestSpecification()).body(data.aTruckpayload(email, firstname, lastname, formId, userType));
+	}
 
 
 

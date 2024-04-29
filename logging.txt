@@ -20,37 +20,46 @@ Body:
         "CreateUserFromLink"
     ],
     "type": "BUSINESS",
-    "formId": "dd20f8b2-1aac-11ed-861d-0242ac120002dd20f8b2-1aac-11ed-861d-0242ac120002",
-    "accountName": "e91c22e9-c506-4442-9bda-268ab2d786eb",
+    "businessRole": "Independent Contractor",
+    "formId": "fb1a5abd-0b5a-459c-b823-ea816459b940",
+    "accountName": "2e06031f-104b-4db6-ba45-8a945bfa0f95",
     "isUserAnApplicant": "{\"isUserAnApplicant\":\"yes\"}",
     "identifier_field": "email",
-    "country": "United States of America",
+    "sellerAccountName": "2e06031f-104b-4db6-ba45-8a945bfa0f95",
+    "sellerBusinessRole": null,
+    "name": null,
     "entity_name": "USER",
+    "regiondelegate": "ClientSpecificUserType",
     "postLoginUrl": "pipeline",
     "template": "NewAccount",
     "extraAPPByForm": "{\"payment\":\"cec14502-3c24-4616-a0dd-5a6bf25fabf4\"}",
-    "firstname": "Ashish",
+    "role": null,
+    "userkey": "Welcome2HDOL!",
+    "firstname": "Mahesh",
     "lastname": "Krishnan",
-    "userType": "OfficeEmployee",
-    "phone": "(574) 374-3734",
-    "address1": "Test Address 12",
+    "userName": "Mahesh Krishnan",
+    "userType": "nonCdlDriver",
+    "email": "test+671@email.com",
+    "email2": "test+671@email.com",
+    "phone": "(987) 656-7876",
+    "address1": "#123 abc test",
+    "city": "testcity",
     "stateObj": {
-        "name": "Colorado",
-        "abbreviation": "CO"
+        "name": "Arkansas",
+        "abbreviation": "AR"
     },
-    "state": "CO",
-    "city": "City",
-    "email": "test+698@email.com",
-    "submit": true,
-    "zip": "35004",
+    "state": "AR",
+    "zip": 22323,
+    "register": true,
     "appId": "a4b1f073-fc20-477f-a804-1aa206938c42",
-    "preferences": "{\"timezone\":\"Asia/Calcutta\"}"
+    "preferences": "{\"timezone\":\"Asia/Calcutta\"}",
+    "registration_EMAIL_SEND": "false"
 }
 HTTP/1.1 200 OK
-Date: Fri, 26 Apr 2024 16:21:13 GMT
+Date: Mon, 29 Apr 2024 04:42:52 GMT
 Server: Apache
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-Content-Length: 465
+Content-Length: 466
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json; charset=utf-8
@@ -58,8 +67,82 @@ Content-Type: application/json; charset=utf-8
 {
     "status": "success",
     "data": {
-        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQxNDg0NzQsImp0aSI6IkNqbmYwNXFsZ09BdldCckxhQ29hbFFHWXo3WmVpeWR3UzVJcHI1aXJJOGs9IiwibmJmIjoxNzE0MTQ4NDc0LCJleHAiOjE3MTQyMjA0NzQsImRhdGEiOnsidXNlcm5hbWUiOiJ0ZXN0KzY5OEBlbWFpbC5jb20iLCJhY2NvdW50SWQiOiIyMzA2In19.uEEXuu8Zh13qu7l5JfB6s4NkEScYSlqn2hEWeoLaGOk1Cz-tdZr0O_pUKPYS4EJyQ2TPhR2krvB3PtoYcrUj3Q",
-        "refresh_token": "732789357662bd47a30cac7.44236894",
-        "username": "test+698@email.com"
+        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQzNjU3NzIsImp0aSI6IjlNcW5vKzkxWFRQTVZsdjkyV3p1aGlUV0Z0QzRuQnkzV2lrUjZBVWRUVTA9IiwibmJmIjoxNzE0MzY1NzcyLCJleHAiOjE3MTQ0Mzc3NzIsImRhdGEiOnsidXNlcm5hbWUiOiJ0ZXN0KzY3MUBlbWFpbC5jb20iLCJhY2NvdW50SWQiOiIyNTg5In19.JYrRcS0B9OpqeZPvgTOkJV4x2rIbQ-CAEucdJaJUMu2zHJrVd1C8TYNLQgZVLUnnq7DVHuJMNmOVLgaJ3ICB0g",
+        "refresh_token": "2107083644662f254cd19137.04217829",
+        "username": "test+671@email.com"
+    }
+}
+Request method:	POST
+Request URI:	https://hubdriveonlinetest.eoxvantage.com:9080/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "commands": [
+        "store_cache_data",
+        "sign_in"
+    ],
+    "generatelink": "true",
+    "user_management_commands": [
+        "CreateUserFromLink"
+    ],
+    "type": "BUSINESS",
+    "businessRole": "Independent Contractor",
+    "formId": "fb1a5abd-0b5a-459c-b823-ea816459b940",
+    "accountName": "2e06031f-104b-4db6-ba45-8a945bfa0f95",
+    "isUserAnApplicant": "{\"isUserAnApplicant\":\"yes\"}",
+    "identifier_field": "email",
+    "sellerAccountName": "2e06031f-104b-4db6-ba45-8a945bfa0f95",
+    "sellerBusinessRole": null,
+    "name": null,
+    "entity_name": "USER",
+    "regiondelegate": "ClientSpecificUserType",
+    "postLoginUrl": "pipeline",
+    "template": "NewAccount",
+    "extraAPPByForm": "{\"payment\":\"cec14502-3c24-4616-a0dd-5a6bf25fabf4\"}",
+    "role": null,
+    "userkey": "Welcome2HDOL!",
+    "firstname": "Suresh",
+    "lastname": "Krishnan",
+    "userName": "Suresh Krishnan",
+    "userType": "cdlDriver",
+    "email": "test+672@email.com",
+    "email2": "test+672@email.com",
+    "phone": "(987) 656-7876",
+    "address1": "#123 abc test",
+    "city": "testcity",
+    "stateObj": {
+        "name": "Arkansas",
+        "abbreviation": "AR"
+    },
+    "state": "AR",
+    "zip": 22323,
+    "register": true,
+    "appId": "a4b1f073-fc20-477f-a804-1aa206938c42",
+    "preferences": "{\"timezone\":\"Asia/Calcutta\"}",
+    "registration_EMAIL_SEND": "false"
+}
+HTTP/1.1 200 OK
+Date: Mon, 29 Apr 2024 04:42:54 GMT
+Server: Apache
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Length: 468
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json; charset=utf-8
+
+{
+    "status": "success",
+    "data": {
+        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQzNjU3NzQsImp0aSI6Ik8xdW5YQlVUSEFOb1JUTXA5ODE5R3pSeVpxOTVRVmFcLzhBYklNSE1tWGhvPSIsIm5iZiI6MTcxNDM2NTc3NCwiZXhwIjoxNzE0NDM3Nzc0LCJkYXRhIjp7InVzZXJuYW1lIjoidGVzdCs2NzJAZW1haWwuY29tIiwiYWNjb3VudElkIjoiMjU4OSJ9fQ.NZpGiUAkdKnXnS969ehELIORMhezCpynYyklNSHGv8lx_7XTXGqEmO5nXN-Khhe6ENG8UmfQRHinPwkLIr8IXA",
+        "refresh_token": "1366592357662f254eedd666.53862077",
+        "username": "test+672@email.com"
     }
 }

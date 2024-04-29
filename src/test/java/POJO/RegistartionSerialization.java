@@ -5,55 +5,17 @@ import java.util.List;
 public class RegistartionSerialization {
 	private List<String> commands;
 	
-	private String generatelink;
-	
-	private List<String> user_management_commands;
-	
-	private String type;
-	private String formId;
-	private String accountName;
-	private String isUserAnApplicant;
-	private String identifier_field;
-	private String country;
-	private String entity_name;
-	private String postLoginUrl;
-	private String template;
-	private String extraAPPByForm;
-	private String firstname;
-	private String lastname;
-	private String userType;
-	private String phone;
-	private String address1;
-	private STATEOBJECT stateObj;
-	private String state;
-	private String city;
-	private String email;
-	private boolean submit;
-	private String zip;
-	private String appId;
-	private String preferences;
-
-	
-
-public List<String> getCommands() {
-	return commands;
-}
-public void setCommands(List<String> commands) {
-	this.commands = commands;
-}
-	
-	public String getTemplate() {
-		return template;
+	public List<String> getCommands() {
+		return commands;
 	}
-	public void setTemplate(String template) {
-		this.template = template;
+	public void setCommands(List<String> commands) {
+		this.commands = commands;
 	}
-	
 	public String getGeneratelink() {
 		return generatelink;
 	}
-	public void setGeneratelink(String string) {
-		this.generatelink = string;
+	public void setGeneratelink(String generatelink) {
+		this.generatelink = generatelink;
 	}
 	public List<String> getUser_management_commands() {
 		return user_management_commands;
@@ -108,6 +70,12 @@ public void setCommands(List<String> commands) {
 	}
 	public void setPostLoginUrl(String postLoginUrl) {
 		this.postLoginUrl = postLoginUrl;
+	}
+	public String getTemplate() {
+		return template;
+	}
+	public void setTemplate(String template) {
+		this.template = template;
 	}
 	public String getExtraAPPByForm() {
 		return extraAPPByForm;
@@ -169,11 +137,11 @@ public void setCommands(List<String> commands) {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public boolean getSubmit() {
+	public boolean isSubmit() {
 		return submit;
 	}
-	public void setSubmit(boolean b) {
-		this.submit = b;
+	public void setSubmit(boolean submit) {
+		this.submit = submit;
 	}
 	public String getZip() {
 		return zip;
@@ -193,6 +161,36 @@ public void setCommands(List<String> commands) {
 	public void setPreferences(String preferences) {
 		this.preferences = preferences;
 	}
+	private String generatelink;
+	
+	private List<String> user_management_commands;
+	
+	private String type;
+	private String formId;
+	private String accountName;
+	private String isUserAnApplicant;
+	private String identifier_field;
+	private String country;
+	private String entity_name;
+	private String postLoginUrl;
+	private String template;
+	private String extraAPPByForm;
+	private String firstname;
+	private String lastname;
+	private String userType;
+	private String phone;
+	private String address1;
+	private STATEOBJECT stateObj;
+	private String state;
+	private String city;
+	private String email;
+	private boolean submit;
+	private String zip;
+	private String appId;
+	private String preferences;
+
+	
+
 	
 
 }
