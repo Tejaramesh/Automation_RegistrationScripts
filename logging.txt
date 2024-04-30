@@ -20,57 +20,53 @@ Body:
         "CreateUserFromLink"
     ],
     "type": "BUSINESS",
-    "businessRole": "Independent Contractor",
-    "formId": "fb1a5abd-0b5a-459c-b823-ea816459b940",
-    "accountName": "2e06031f-104b-4db6-ba45-8a945bfa0f95",
+    "formId": "dd20f8b2-1aac-11ed-861d-0242ac120002",
+    "accountName": "d0d9ed1d-20a3-4131-8d4f-f360560180c5",
     "isUserAnApplicant": "{\"isUserAnApplicant\":\"yes\"}",
     "identifier_field": "email",
-    "sellerAccountName": "2e06031f-104b-4db6-ba45-8a945bfa0f95",
-    "sellerBusinessRole": null,
-    "name": null,
+    "country": "United States of America",
+    "name": "gvfd grfed",
     "entity_name": "USER",
-    "regiondelegate": "ClientSpecificUserType",
     "postLoginUrl": "pipeline",
     "template": "NewAccount",
     "extraAPPByForm": "{\"payment\":\"cec14502-3c24-4616-a0dd-5a6bf25fabf4\"}",
-    "role": null,
-    "userkey": "Welcome2HDOL!",
     "firstname": "Mahesh",
+    "iCFirstName": "Mahesh",
     "lastname": "Krishnan",
-    "userName": "Mahesh Krishnan",
-    "userType": "nonCdlDriver",
-    "email": "test+671@email.com",
-    "email2": "test+671@email.com",
-    "phone": "(987) 656-7876",
-    "address1": "#123 abc test",
-    "city": "testcity",
-    "stateObj": {
-        "name": "Arkansas",
-        "abbreviation": "AR"
-    },
-    "state": "AR",
-    "zip": 22323,
-    "register": true,
+    "userType": "General",
+    "email": "test+677@email.com",
+    "email2": null,
+    "phone": "(876) 543-4567",
+    "address1": "vgbh",
+    "city": "gvb",
+    "city1IC": "gvb",
+    "stateObj": null,
+    "state": "AK",
+    "zip": 23333,
+    "zipCode1IC": 23333,
+    "iCEmail": "test+677@email.com",
+    "submit": true,
     "appId": "a4b1f073-fc20-477f-a804-1aa206938c42",
     "preferences": "{\"timezone\":\"Asia/Calcutta\"}",
-    "registration_EMAIL_SEND": "false"
+    "icLastName": "Krishnan"
 }
-HTTP/1.1 200 OK
-Date: Mon, 29 Apr 2024 04:42:52 GMT
+HTTP/1.1 404 Not Found
+Date: Mon, 29 Apr 2024 12:07:29 GMT
 Server: Apache
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-Content-Length: 466
+Content-Length: 216
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json; charset=utf-8
 
 {
-    "status": "success",
-    "data": {
-        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQzNjU3NzIsImp0aSI6IjlNcW5vKzkxWFRQTVZsdjkyV3p1aGlUV0Z0QzRuQnkzV2lrUjZBVWRUVTA9IiwibmJmIjoxNzE0MzY1NzcyLCJleHAiOjE3MTQ0Mzc3NzIsImRhdGEiOnsidXNlcm5hbWUiOiJ0ZXN0KzY3MUBlbWFpbC5jb20iLCJhY2NvdW50SWQiOiIyNTg5In19.JYrRcS0B9OpqeZPvgTOkJV4x2rIbQ-CAEucdJaJUMu2zHJrVd1C8TYNLQgZVLUnnq7DVHuJMNmOVLgaJ3ICB0g",
-        "refresh_token": "2107083644662f254cd19137.04217829",
-        "username": "test+671@email.com"
-    }
+    "status": "error",
+    "errorCode": 404,
+    "message": "Please Select Proper State.",
+    "reason": "error-controller-cannot-dispatch",
+    "display_exceptions": true,
+    "controller": "Auth\\Controller\\AuthController",
+    "controller_class": null
 }
 Request method:	POST
 Request URI:	https://hubdriveonlinetest.eoxvantage.com:9080/register
@@ -94,55 +90,121 @@ Body:
         "CreateUserFromLink"
     ],
     "type": "BUSINESS",
-    "businessRole": "Independent Contractor",
-    "formId": "fb1a5abd-0b5a-459c-b823-ea816459b940",
-    "accountName": "2e06031f-104b-4db6-ba45-8a945bfa0f95",
+    "formId": "formId",
+    "accountName": "d0d9ed1d-20a3-4131-8d4f-f360560180c5",
     "isUserAnApplicant": "{\"isUserAnApplicant\":\"yes\"}",
     "identifier_field": "email",
-    "sellerAccountName": "2e06031f-104b-4db6-ba45-8a945bfa0f95",
-    "sellerBusinessRole": null,
-    "name": null,
+    "country": "United States of America",
+    "name": "gvfd grfed",
     "entity_name": "USER",
-    "regiondelegate": "ClientSpecificUserType",
     "postLoginUrl": "pipeline",
     "template": "NewAccount",
     "extraAPPByForm": "{\"payment\":\"cec14502-3c24-4616-a0dd-5a6bf25fabf4\"}",
-    "role": null,
-    "userkey": "Welcome2HDOL!",
-    "firstname": "Suresh",
-    "lastname": "Krishnan",
-    "userName": "Suresh Krishnan",
-    "userType": "cdlDriver",
-    "email": "test+672@email.com",
-    "email2": "test+672@email.com",
-    "phone": "(987) 656-7876",
-    "address1": "#123 abc test",
-    "city": "testcity",
-    "stateObj": {
-        "name": "Arkansas",
-        "abbreviation": "AR"
-    },
-    "state": "AR",
-    "zip": 22323,
-    "register": true,
+    "firstname": "firstname",
+    "iCFirstName": "firstname",
+    "lastname": "lastname",
+    "userType": "userType",
+    "email": "email",
+    "email2": null,
+    "phone": "(876) 543-4567",
+    "address1": "vgbh",
+    "city": "gvb",
+    "city1IC": "gvb",
+    "stateObj": null,
+    "state": "AK",
+    "zip": 23333,
+    "zipCode1IC": 23333,
+    "iCEmail": "email",
+    "submit": true,
     "appId": "a4b1f073-fc20-477f-a804-1aa206938c42",
     "preferences": "{\"timezone\":\"Asia/Calcutta\"}",
-    "registration_EMAIL_SEND": "false"
+    "icLastName": "lastname"
 }
-HTTP/1.1 200 OK
-Date: Mon, 29 Apr 2024 04:42:54 GMT
+HTTP/1.1 404 Not Found
+Date: Mon, 29 Apr 2024 12:07:30 GMT
 Server: Apache
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-Content-Length: 468
+Content-Length: 206
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json; charset=utf-8
 
 {
-    "status": "success",
-    "data": {
-        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQzNjU3NzQsImp0aSI6Ik8xdW5YQlVUSEFOb1JUTXA5ODE5R3pSeVpxOTVRVmFcLzhBYklNSE1tWGhvPSIsIm5iZiI6MTcxNDM2NTc3NCwiZXhwIjoxNzE0NDM3Nzc0LCJkYXRhIjp7InVzZXJuYW1lIjoidGVzdCs2NzJAZW1haWwuY29tIiwiYWNjb3VudElkIjoiMjU4OSJ9fQ.NZpGiUAkdKnXnS969ehELIORMhezCpynYyklNSHGv8lx_7XTXGqEmO5nXN-Khhe6ENG8UmfQRHinPwkLIr8IXA",
-        "refresh_token": "1366592357662f254eedd666.53862077",
-        "username": "test+672@email.com"
-    }
+    "status": "error",
+    "errorCode": 404,
+    "message": "Invalid User Type",
+    "reason": "error-controller-cannot-dispatch",
+    "display_exceptions": true,
+    "controller": "Auth\\Controller\\AuthController",
+    "controller_class": null
+}
+Request method:	POST
+Request URI:	https://hubdriveonlinetest.eoxvantage.com:9080/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "commands": [
+        "store_cache_data",
+        "sign_in"
+    ],
+    "generatelink": "true",
+    "user_management_commands": [
+        "CreateUserFromLink"
+    ],
+    "type": "BUSINESS",
+    "formId": "4ab3bc85-803e-47bb-b50d-a2598570bf1a",
+    "accountName": "d0d9ed1d-20a3-4131-8d4f-f360560180c5",
+    "isUserAnApplicant": "{\"isUserAnApplicant\":\"yes\"}",
+    "identifier_field": "email",
+    "country": "United States of America",
+    "name": "gvfd grfed",
+    "entity_name": "USER",
+    "postLoginUrl": "pipeline",
+    "template": "NewAccount",
+    "extraAPPByForm": "{\"payment\":\"cec14502-3c24-4616-a0dd-5a6bf25fabf4\"}",
+    "firstname": "Mahesh",
+    "iCFirstName": "Mahesh",
+    "lastname": "Krishnan",
+    "userType": "DotDriver",
+    "email": "test+678@email.com",
+    "email2": null,
+    "phone": "(876) 543-4567",
+    "address1": "vgbh",
+    "city": "gvb",
+    "city1IC": "gvb",
+    "stateObj": null,
+    "state": "AK",
+    "zip": 23333,
+    "zipCode1IC": 23333,
+    "iCEmail": "test+678@email.com",
+    "submit": true,
+    "appId": "a4b1f073-fc20-477f-a804-1aa206938c42",
+    "preferences": "{\"timezone\":\"Asia/Calcutta\"}",
+    "icLastName": "Krishnan"
+}
+HTTP/1.1 404 Not Found
+Date: Mon, 29 Apr 2024 12:07:31 GMT
+Server: Apache
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Length: 216
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json; charset=utf-8
+
+{
+    "status": "error",
+    "errorCode": 404,
+    "message": "Please Select Proper State.",
+    "reason": "error-controller-cannot-dispatch",
+    "display_exceptions": true,
+    "controller": "Auth\\Controller\\AuthController",
+    "controller_class": null
 }

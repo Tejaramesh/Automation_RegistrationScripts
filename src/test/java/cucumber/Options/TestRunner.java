@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features="src/test/java/features",glue= {"stepDefinations"},tags= "@ATruck")
+@CucumberOptions(features="src/test/java/features",glue= {"stepDefinations"},tags= "@BAIER")
 public class TestRunner {
 
 

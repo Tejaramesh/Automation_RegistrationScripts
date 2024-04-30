@@ -71,6 +71,27 @@ public class StepDefination extends Utils {
 		 req = given().spec(requestSpecification()).body(data.aTruckpayload(email, firstname, lastname, formId, userType));
 	}
 
+	
+	@Given("Rison Transport Registration Details with {string} {string} {string} {string} {string}")
+	public void rison_transport_registration_details_with(String email, String firstname, String lastname, String formId, String userType) throws IOException {
+	    
+		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		//connecting generic variable to request
+	 req = given().spec(requestSpecification()).body(data.risonpayload(email, firstname, lastname, formId, userType));
+		
+	}
+
+	@Given("Baier Transport Registration Details with {string} {string} {string} {string} {string}")
+	public void baier_transport_registration_details_with(String email, String firstname, String lastname, String formId, String userType) throws IOException {
+	    
+		 
+		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		//connecting generic variable to request
+	 req = given().spec(requestSpecification()).body(data.baierPayload(email, firstname, lastname, formId, userType));
+	}
+
+
+
 
 
 }

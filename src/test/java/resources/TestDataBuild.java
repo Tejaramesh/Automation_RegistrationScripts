@@ -7,9 +7,13 @@ import POJO.RegistartionSerialization;
 import POJO.STATEOBJECT;
 import POJO.ATruck.Registrationlist;
 import POJO.ATruck.StateObject;
+import POJO.Baier.Registrationlistbaier;
+import POJO.Baier.Stateobjectba;
+import POJO.Rison.Registrationlistrison;
+import POJO.Rison.STATEOBJ;
 import io.restassured.RestAssured;
 
-public class TestDataBuild {
+public class TestDataBuild  {
 	
 	//RTTI Registration details
 	
@@ -125,11 +129,118 @@ public Registrationlist aTruckpayload(String email, String firstname, String las
 
 
 
+public Registrationlistrison risonpayload(String email, String firstname, String lastname, String formId, String userType)
+{
+	Registrationlistrison rrl=new Registrationlistrison();
+	List<String> commands=new ArrayList<String>();
+	commands.add("store_cache_data");
+	commands.add("sign_in");
+	rrl.setCommands(commands);
+	
+	rrl.setGeneratelink("true");
+	List<String>  umc=new ArrayList<String>();
+	umc.add("CreateUserFromLink");
+	rrl.setUser_management_commands(umc);
+	
+	rrl.setType("BUSINESS");
+	rrl.setFormId(formId);
+	rrl.setAccountName("a41244ed-91e8-4ff8-a044-82d1aa5ac48b");
+	rrl.setIsUserAnApplicant("{\"isUserAnApplicant\":\"yes\"}");
+	rrl.setIdentifier_field("email");
+	rrl.setCountry("United States of America");
+	rrl.setName(firstname);
+	rrl.setEntity_name("USER");
+	rrl.setTemplate("pipeline");
+	rrl.setTemplate("NewAccount");
+	rrl.setExtraAPPByForm("{\"payment\":\"cec14502-3c24-4616-a0dd-5a6bf25fabf4\"}");
+	rrl.setFirstname(firstname);
+	rrl.setiCFirstName(firstname);
+	rrl.setLastname(lastname);
+	rrl.setUserType("DotDriver");
+	rrl.setIcLastName(lastname);
+	rrl.setEmail(email);
+	rrl.setEmail2(email);
+	rrl.setPhone("(876) 567-8876");
+	rrl.setAddress1("#123 abc test");
+	rrl.setCity("cleveland");
+	rrl.setCity1IC("cleveland");
+	
+	
+	STATEOBJ soj=new STATEOBJ();
+	soj.setName("Ohio");
+	soj.setAbbreviation("OH");
+	rrl.setStateObj(soj);
+	
+	rrl.setState("OH");
+	rrl.setZip(23233);
+	rrl.setZipCode1IC(23233);
+    rrl.setiCEmail(email);
+    rrl.setSubmit(true);
+    rrl.setAppId("a4b1f073-fc20-477f-a804-1aa206938c42");
+    rrl.setPreferences("{\"timezone\":\"Asia/Calcutta\"}");
+    	
+	return rrl;	
+	
+}
 
 
 
+public Registrationlistbaier baierPayload(String email, String firstname, String lastname, String formId, String userType)
+{
+	Registrationlistbaier bpl=new Registrationlistbaier();
+	
+	List<String> cmd=new ArrayList<String>();
+	cmd.add("store_cache_data");
+	cmd.add("sign_in");
+	bpl.setCommands(cmd);
+	
+	bpl.setGeneratelink("true");
+	
+	List<String> umc=new ArrayList<String>();
+	umc.add("CreateUserFromLink");
+    bpl.setUser_management_commands(umc);
+    
+    
+bpl.setType("BUSINESS");
+bpl.setFormId(formId);
+bpl.setAccountName("d0d9ed1d-20a3-4131-8d4f-f360560180c5");
+bpl.setIsUserAnApplicant("{\"isUserAnApplicant\":\"yes\"}");
+bpl.setIdentifier_field("email");
+bpl.setCountry("United States of America");
+bpl.setName("gvfd grfed");
+bpl.setEntity_name("USER");
+bpl.setPostLoginUrl("pipeline");
+bpl.setTemplate("NewAccount");
+bpl.setExtraAPPByForm("{\"payment\":\"cec14502-3c24-4616-a0dd-5a6bf25fabf4\"}");
+bpl.setFirstname(firstname);
+bpl.setiCFirstName(firstname);
+bpl.setLastname(lastname);
+bpl.setUserType(userType);
+bpl.setIcLastName(lastname);
+bpl.setEmail(email);
+bpl.setEmail(email);
+bpl.setPhone("(876) 543-4567");
+bpl.setAddress1("vgbh");
+bpl.setCity("gvb");
+bpl.setCity1IC("gvb");
+
+Stateobjectba so1=new Stateobjectba();
+so1.setName("Ohio");
+so1.setAbbreviation("OH");
+bpl.setStateObj(so1);
+
+bpl.setState("AK");
+bpl.setZip(23333);
+bpl.setZipCode1IC(23333);
+bpl.setiCEmail(email);
+bpl.setSubmit(true);
+bpl.setAppId("a4b1f073-fc20-477f-a804-1aa206938c42");
+bpl.setPreferences("{\"timezone\":\"Asia/Calcutta\"}");
 
 
+return bpl;
+	
+}
 
 
 
